@@ -165,8 +165,6 @@ function trackGame(currentRoundCount) {
             if (playerScore > computerScore) {
                 matchResults.textContent = "You won that match! Good job.";
                 roundCount = 0;
-                playerScore = 0;
-                computerScore = 0;
                 playerScoreField.textContent = playerScore;
                 computerScoreField.textContent = computerScore;
                 resetField.appendChild(resetGameBtn);
@@ -174,8 +172,6 @@ function trackGame(currentRoundCount) {
             } else if (computerScore > playerScore) {
                 matchResults.textContent = "You lost that match! Try again.";
                 roundCount = 0;
-                playerScore = 0;
-                computerScore = 0;
                 playerScoreField.textContent = playerScore;
                 computerScoreField.textContent = computerScore;
                 resetField.appendChild(resetGameBtn);
@@ -183,8 +179,6 @@ function trackGame(currentRoundCount) {
             } else {
                 matchResults.textContent = "It was a tie! Try again.";
                 roundCount = 0;
-                playerScore = 0;
-                computerScore = 0;
                 playerScoreField.textContent = playerScore;
                 computerScoreField.textContent = computerScore;
                 resetField.appendChild(resetGameBtn);
