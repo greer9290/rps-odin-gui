@@ -106,7 +106,6 @@ setRoundBtn.addEventListener('click', () => {
 playRoundBtn.addEventListener('click', () => {
     if (playerChoice != undefined && currentRoundCount > 0) {
     playRound(playerChoice, computerChoice, currentRoundCount);
-    roundResults.textContent = outcome;
     currentRoundCount = decreaseRoundCount(currentRoundCount)
     trackGame(currentRoundCount);
     } else {
