@@ -1,5 +1,51 @@
-<script src="rps.js"></script>
+<html>
+<style>
+    body {
+        color: white;
+        background-color: black;
+    }
+
+    .choice-bg {
+        color: white;
+    }
+
+    #scorebox {
+        color: whitesmoke;
+        background-color: crimson;
+        padding: 20px;
+    }
+
+    #computerChoice {
+        color: darkslategrey;
+    }
+</style>
+
 <body>
-<button id="button">Click</button>
-<canvas id="canvas"></canvas>
+    <p>Number of Rounds:
+        <input id="numRounds" type="number" />
+    </p>
+    <button id="setRoundCount">SET ROUND COUNT</button>
+    <button id="playRound">PLAY ROUND</button>
+    <p>
+        <label id="remainingRounds">Rounds Remaining: 0</label>
+    </p>
+    <ul id="playerChoices">Your Selection:
+
+        <button id="rock">ROCK</button>
+        <button id="paper">PAPER</button>
+        <button id="scissors">SCISSORS</button>
+    </ul>
+    <p>
+    <p>The computer chose: <button class="choice-bg" id="computerChoice">Press Play Round -^</button>
+    </p>
+    <p>Round results:<span class="choice-bg" id="roundResults"></span></p>
+    <div id="scorebox">
+        <p>Player Score:<span class="choice-bg" id="player-score"></span></p>
+        <p>Computer Score:<span class="choice-bg" id="computer-score"></span></p>
+    </div>
+    <p>Match results:<span class="choice-bg" id="matchResults"></span></p>
+    <ul id="resetfield"></ul>
 </body>
+<script src="rps.js"></script>
+
+</html>
